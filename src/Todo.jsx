@@ -44,10 +44,10 @@ const onClickComplete = (index) => {
 
   return (
   <>
-  <InputTodo 
-    todoText={todoText} 
-    onChange={onChangeTodoText} 
-    onClick={onClickAdd} 
+  <InputTodo
+    todoText={todoText}
+    onChange={onChangeTodoText}
+    onClick={onClickAdd}
     disabled={isMaxLimitIncompleteTodos}
   />
   {isMaxLimitIncompleteTodos && (
@@ -55,12 +55,12 @@ const onClickComplete = (index) => {
       登録できるToDoは５個まで！まずは行動。そして習慣へ
     </p>
   )}
-  <IncompleteTodos 
+  <IncompleteTodos
     incompleteTodos={incompleteTodos}
     onClickComplete={onClickComplete}
     onClickDelete={onClickDelete}
   />
-  <CompleteTodos 
+  <CompleteTodos
     completeTodos={completeTodos}
     onClickReturn={onClickReturn}
   />
